@@ -7,14 +7,11 @@ import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-import Pricing from "@/components/Pricing";
-import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
 import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
-import LinkedInPosts from "@/components/LinkdinPosts";
-import LinkedIn from "next-auth/providers/linkedin";
 import "./globals.css";
+import Banner from "@/components/Banner";
 export const metadata: Metadata = {
   title: "Home | Nearby You",
   description: "At Nearby You, we specialize in empowering businesses to grow, thrive, and succeed in today’s competitive landscape. As a full-service business growth consultancy, we provide a comprehensive suite of services tailored to your unique needs.",
@@ -100,7 +97,6 @@ export default function Home() {
       <CallToAction />
       <Testimonials />
       <Faq />
-      <Team showAll={false} />
     {/*  <LinkedInPosts /> */}
       <Contact />
      {/* <Clients />*/}

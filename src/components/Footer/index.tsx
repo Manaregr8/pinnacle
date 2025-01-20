@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="mb-10 w-full">
               <Link href="/" className="mb-6 inline-block max-w-[160px]">
                 <Image
-                  src="/images/logos/logo-darkbg.svg"
+                  src="/logo/logo-white.png"
                   alt="logo"
                   width={140}
                   height={30}
@@ -281,7 +281,7 @@ const Footer = () => {
                     target="_blank"
                     className="text-gray-1 hover:underline"
                   >
-                    Nearby You Dev Team
+                    Manjeet Singh
                   </a>
                 </p>
               </div>

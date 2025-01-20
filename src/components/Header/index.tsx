@@ -25,11 +25,11 @@ export default function Navbar() {
                     <div className={styles.flexContainer}>
                         <div className={styles.headlogo}>
                             <img src='/logo/logo.png'/>
-                            <h1>Pinnacle Study</h1>
+                            <h1 className={`text-3xl font-custom ${styles.logoText}`}>Pinnacle Study</h1> {/* Apply custom font to h1 while keeping other classes */}
                         </div>
                         <div className={styles.linksContainer}>
                             <Link 
-                                className={`${styles.hoverLink} ${activeLink === 'home' ? styles.active : ''}`} 
+                                className={`${styles.hoverLink} ${activeLink === 'home' ? styles.active : ''} font-custom`} 
                                 href="/" 
                                 onClick={handleActive} 
                                 data-link="home"
@@ -38,40 +38,40 @@ export default function Navbar() {
                             </Link>
                             <div className={styles.mainRoutes}>
                                 <Link 
-                                    className={`${styles.hoverLink} ${activeLink === 'study' ? styles.active : ''}`} 
-                                    href="/" 
+                                    className={`${styles.hoverLink} ${activeLink === 'study' ? styles.active : ''} font-custom`} 
+                                    href="/study" 
                                     onClick={handleActive} 
                                     data-link="study"
                                 >
                                     Study
                                 </Link>
                                 <Link 
-                                    className={`${styles.hoverLink} ${activeLink === 'work' ? styles.active : ''}`} 
-                                    href="/" 
+                                    className={`${styles.hoverLink} ${activeLink === 'work' ? styles.active : ''} font-custom`} 
+                                    href="/work" 
                                     onClick={handleActive} 
                                     data-link="work"
                                 >
                                     Work
                                 </Link>
                                 <Link 
-                                    className={`${styles.hoverLink} ${activeLink === 'visa' ? styles.active : ''}`} 
-                                    href="/" 
+                                    className={`${styles.hoverLink} ${activeLink === 'visa' ? styles.active : ''} font-custom`} 
+                                    href="/visa" 
                                     onClick={handleActive} 
                                     data-link="visa"
                                 >
                                     Visa
                                 </Link>
                                 <Link 
-                                    className={`${styles.hoverLink} ${activeLink === 'migrate' ? styles.active : ''}`} 
-                                    href="/" 
+                                    className={`${styles.hoverLink} ${activeLink === 'migrate' ? styles.active : ''} font-custom`} 
+                                    href="/migrate" 
                                     onClick={handleActive} 
                                     data-link="migrate"
                                 >
                                     Migrate
                                 </Link>
                                 <Link 
-                                    className={`${styles.hoverLink} ${activeLink === 'coaching' ? styles.active : ''}`} 
-                                    href="/" 
+                                    className={`${styles.hoverLink} ${activeLink === 'coaching' ? styles.active : ''} font-custom`} 
+                                    href="/coaching" 
                                     onClick={handleActive} 
                                     data-link="coaching"
                                 >
@@ -90,14 +90,14 @@ export default function Navbar() {
                                 }}
                             >
                                 <div className={styles.menuHead}>
-                                    <p className={styles.menuHeading}>Pinnacle Study</p>
+                                    <p className={`text-xl font-custom ${styles.menuHeading}`}>Pinnacle Study</p> {/* Apply custom font to menu header */}
                                     <button className={styles.closeButton} onClick={handleToggle}>
                                         <img src="/icons/close.png" alt="Close Menu" />
                                     </button>
                                 </div>
-                                <p>Pages</p>
+                                <p className={`font-custom ${styles.menuPages}`}>Pages</p> {/* Apply custom font to menu section */}
                                 <Link 
-                                    className={`${styles.hoverLink} ${activeLink === 'home' ? styles.active : ''}`} 
+                                    className={`${styles.hoverLink} ${activeLink === 'home' ? styles.active : ''} font-custom`} 
                                     href="/" 
                                     onClick={handleActive} 
                                     data-link="home"
@@ -105,7 +105,7 @@ export default function Navbar() {
                                     Home
                                 </Link>
                                 <Link 
-                                    className={`${styles.hoverLink} ${activeLink === 'about' ? styles.active : ''}`} 
+                                    className={`${styles.hoverLink} ${activeLink === 'about' ? styles.active : ''} font-custom`} 
                                     href="/about" 
                                     onClick={handleActive} 
                                     data-link="about"
@@ -113,41 +113,41 @@ export default function Navbar() {
                                     About Us
                                 </Link>
                                 <Link 
-                                    className={`${styles.hoverLink} ${activeLink === 'contact' ? styles.active : ''}`} 
+                                    className={`${styles.hoverLink} ${activeLink === 'contact' ? styles.active : ''} font-custom`} 
                                     href="/contact" 
                                     onClick={handleActive} 
                                     data-link="contact"
                                 >
                                     Contact Us
                                 </Link>
-                                <p>Services</p>
+                                <p className={`font-custom ${styles.menuServices}`}>Services</p> {/* Apply custom font to services section */}
                                 <Link 
-                                    className={`${styles.hoverLink} ${activeLink === 'work' ? styles.active : ''}`} 
-                                    href="/" 
+                                    className={`${styles.hoverLink} ${activeLink === 'work' ? styles.active : ''} font-custom`} 
+                                    href="/work" 
                                     onClick={handleActive} 
                                     data-link="work"
                                 >
                                     Work
                                 </Link>
                                 <Link 
-                                    className={`${styles.hoverLink} ${activeLink === 'visa' ? styles.active : ''}`} 
-                                    href="/" 
+                                    className={`${styles.hoverLink} ${activeLink === 'visa' ? styles.active : ''} font-custom`} 
+                                    href="/visa" 
                                     onClick={handleActive} 
                                     data-link="visa"
                                 >
                                     Visa
                                 </Link>
                                 <Link 
-                                    className={`${styles.hoverLink} ${activeLink === 'migrate' ? styles.active : ''}`} 
-                                    href="/" 
+                                    className={`${styles.hoverLink} ${activeLink === 'migrate' ? styles.active : ''} font-custom`} 
+                                    href="/migrate" 
                                     onClick={handleActive} 
                                     data-link="migrate"
                                 >
                                     Migrate
                                 </Link>
                                 <Link 
-                                    className={`${styles.hoverLink} ${activeLink === 'coaching' ? styles.active : ''}`} 
-                                    href="/" 
+                                    className={`${styles.hoverLink} ${activeLink === 'coaching' ? styles.active : ''} font-custom`} 
+                                    href="/coaching" 
                                     onClick={handleActive} 
                                     data-link="coaching"
                                 >

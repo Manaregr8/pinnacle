@@ -1,0 +1,21 @@
+.bannerImg{
+  object-fit: cover;
+  width: 100%;
+  height: 650px;
+}
+.bannerConainer{
+  margin-top: 80px;
+}
+.imgContainer{
+  background-color: rgba(0, 0, 0, 0.397);
+}
+@media(max-width:960px){
+  .bannerImg{
+    aspect-ratio: 16/8;
+    height: auto;
+    width: 100%;
+  }
+  .imgContainer{
+    padding: 0;
+  }
+}
