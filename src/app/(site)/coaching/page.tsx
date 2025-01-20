@@ -1,12 +1,14 @@
 
 import BannerWithForm from "@/components/Banner/banner2";
+import Faq from "@/components/Faq";
 
 const Visa = () => {
 
   return (
     <>
-    <div style={{marginTop:"60px"}}></div>
+    <div style={{marginTop:"65px"}}></div>
     <BannerWithForm/>
+    <Faq/>
     </>
   );
 };
