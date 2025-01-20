@@ -4,7 +4,7 @@ const Visa = () => {
 
   return (
     <>
-    <div style={{marginTop:"60px"}}></div>
+    <div style={{marginTop:"65px"}}></div>
     <BannerWithForm/>
     </>
   );

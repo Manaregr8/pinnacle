@@ -9,6 +9,9 @@
 .imgContainer{
   background-color: rgba(0, 0, 0, 0.397);
 }
+.paddingSection{
+  padding-top: 50px;
+}
 @media(max-width:960px){
   .bannerImg{
     aspect-ratio: 16/8;
@@ -17,5 +20,8 @@
   }
   .imgContainer{
     padding: 0;
+  }
+  .paddingSection{
+    padding-top: 25px;
   }
 }

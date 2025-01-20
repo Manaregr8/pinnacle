@@ -51,7 +51,7 @@ const BannerWithForm: React.FC = () => {
       {bannerDataArray.map((data, index) => (
         <section
           key={index}
-          className="p-4 sm:p-8"
+          className="paddingSection p-4 sm:p-8"
           style={{ backgroundColor: data.backgroundColor }}
         >
           <div className="max-w-[1300px] mx-auto flex flex-col lg:flex-row items-stretch rounded-lg overflow-hidden shadow-lg">
