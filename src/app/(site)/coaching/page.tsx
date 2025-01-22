@@ -3,11 +3,12 @@ import BannerWithForm from "@/components/Banner/banner2";
 import Faq from "@/components/Faq";
 import SectionTitle from "../../../components/Common/SectionTitle";
 import SingleFaq from "../../../components/Faq/SingleFaq";
-const Visa = () => {
+import "../../globals.css";
+const Coaching = () => {
 
   return (
     <>
-    <div style={{marginTop:"65px"}}></div>
+    <div className="margiNTop"></div>
     <BannerWithForm/>
     <section id="faqs" className="relative z-20 overflow-hidden bg-white pb-8 pt-20 dark:bg-dark lg:pb-[50px] lg:pt-[120px]">
       <div className="container">
@@ -640,4 +641,4 @@ const Visa = () => {
   );
 };
 
-export default Visa;
+export default Coaching;

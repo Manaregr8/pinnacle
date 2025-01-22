@@ -73,6 +73,9 @@ a{
   max-width: 1300px;
   margin: auto;
 }
+.margiNTop{
+  margin-top: 80px;
+}
 @font-face{
     src: url(/fonts/Raleway-Medium.ttf);
     font-family: Raleway-Medium;       
@@ -88,4 +91,9 @@ a{
 @font-face{
   src: url(/fonts/Raleway-Regular.ttf);
   font-family: Raleway;       
+}
+@media (max-width:425px) {
+  .margiNTop{
+    margin-top: 65px;
+  }
 }

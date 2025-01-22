@@ -78,7 +78,7 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <main>
-      {/* <Breadcrumb pageName="About Us Page" /> */}
+      <div style={{marginTop:"50px"}}></div>
       <About />
     </main>
   );

@@ -122,7 +122,7 @@ export default function Navbar() {
                                 </Link>
                                 <p className={`font-custom ${styles.menuServices}`}>Services</p> {/* Apply custom font to services section */}
                                 <Link 
-                                    className={`${styles.hoverLink} ${activeLink === 'coaching' ? styles.active : ''} font-custom`} 
+                                    className={`${styles.hoverLink} ${activeLink === 'study' ? styles.active : ''} font-custom`} 
                                     href="/study" 
                                     onClick={handleActive} 
                                     data-link="coaching"
