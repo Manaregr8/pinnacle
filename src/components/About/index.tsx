@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative bg-gray-1 pb-8 pt-20 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px]"
+      className="relative bg-gray-1 pb-8 pt-20 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px] "
     >
       <div className="container">
         <div className="wow fadeInUp" data-wow-delay=".2s">
@@ -15,12 +15,12 @@ const About = () => {
                 <h2 data-pointer="hover" className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
                   Your Pathway to a Successful Future
                 </h2>
-                <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  At Pinnacle Study, we specialize in providing comprehensive visa services and coaching to help you achieve your dreams of studying, working, or migrating abroad. With years of experience, we are dedicated to offering personalized assistance tailored to your unique goals and needs.
+                <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6 text-justify">
+                  {`At Pinnacle Study, we specialize in providing comprehensive visa services and coaching to help you achieve your dreams of studying, working, or migrating abroad. With years of experience, we are dedicated to offering personalized assistance tailored to your unique goals and needs.`}
                   <br /><br />
-                  Whether you're looking for guidance with visa applications, interview coaching, or language proficiency test preparation, our experts are here to help. We believe in empowering you with the knowledge and skills to make your international aspirations a reality.
+                  {`Whether you're looking for guidance with visa applications, interview coaching, or language proficiency test preparation, our experts are here to help. We believe in empowering you with the knowledge and skills to make your international aspirations a reality.`}
                   <br /><br />
-                  We are your trusted partner in navigating the complexities of the visa process, ensuring that every step is smooth and stress-free.
+                  {`We are your trusted partner in navigating the complexities of the visa process, ensuring that every step is smooth and stress-free.`}
                 </p>
 
                 <a

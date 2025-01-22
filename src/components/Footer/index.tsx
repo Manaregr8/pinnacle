@@ -21,7 +21,7 @@ const Footer = () => {
                 />
               </Link>
               <p className="mb-8 max-w-[270px] text-base text-gray-7">
-              We are your trusted partner in navigating the complexities of the visa process, ensuring that every step is smooth and stress-free.
+              {`We are your trusted partner in navigating the complexities of the visa process, ensuring that every step is smooth and stress-free.`}
               </p>
               <div className="-mx-3 flex items-center">
                 {/* <a
@@ -170,39 +170,47 @@ const Footer = () => {
           <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-white">
-                Our Projects
+                Our Services
               </h4>
               <ul>
                 <li>
                   <a
-                    href="https://www.zealoops.com/"
+                    href="/visa"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Zealoops.com
+                    Visa
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://respikart.com/"
+                    href="/study"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Respikart.com
+                    Study Abroad
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://surgikartindia.com/"
+                    href="/work"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Surgikart.com
+                    Work Abroad
                   </a>
                 </li>
                 <li>
                   <Link
-                    href="https://github.com/Manaregr8?tab=repositories"
+                    href="/coaching"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    More Projects
+                    Exam Preparation
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/migrate"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                  >
+                    Migration Support
                   </Link>
                 </li>
               </ul>

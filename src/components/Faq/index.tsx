@@ -3,7 +3,7 @@ import SingleFaq from "./SingleFaq";
 
 const Faq = () => {
   return (
-    <section id="faqs" className="relative z-20 overflow-hidden bg-white pb-8 pt-20 dark:bg-dark lg:pb-[50px] lg:pt-[120px]">
+    <section id="faqs" className="relative z-20 overflow-hidden bg-white pb-8 pt-20 dark:bg-dark lg:pb-[50px] lg:pt-[120px] text-justify">
       <div className="container">
         <SectionTitle
           subtitle="FAQ"
@@ -16,31 +16,31 @@ const Faq = () => {
 <div className="-mx-4 mt-[60px] flex flex-wrap lg:mt-20">
   <div className="w-full px-4 lg:w-1/2">
     <SingleFaq
-      question="What makes your website development services stand out?"
-      answer="Our website development services are designed to create fast, secure, and user-friendly websites that drive business growth. We specialize in responsive designs, SEO-friendly architecture, and integrating the latest technologies, ensuring your website attracts visitors and converts them into loyal customers."
+      question="What types of visas do you assist with and how?"
+      answer="We assist with a wide range of visas, including study visas, work visas, migration visas, and family reunion visas. Our team ensures you meet all requirements and guides you through the entire application process."
     />
     <SingleFaq
-      question="How does your digital marketing strategy help businesses grow?"
-      answer="We provide tailored digital marketing strategies that include SEO, social media marketing, and email campaigns. By targeting the right audience with data-driven insights, we help improve your online visibility, drive quality traffic to your website, and generate more leads."
+      question="Do you provide coaching for visa interviews and tests?"
+      answer="Yes, we offer personalized coaching for visa interviews. Our sessions focus on preparing you with mock interviews, answering techniques, and building confidence to ensure a successful interview experience."
     />
     <SingleFaq
-      question="Can you help with creating a strong brand identity?"
-      answer="Yes, we excel in logo and branding design services. Whether you're starting fresh or rebranding, we craft compelling visuals and strategies that reflect your business values and make your brand memorable in a competitive market."
+      question="What study abroad coaching services do you provide?"
+      answer="We provide end-to-end guidance for studying abroad, including university selection, application support, SOP and LOR writing, and assistance with entrance exams like IELTS, TOEFL, GRE, and more."
     />
   </div>
 
   <div className="w-full px-4 lg:w-1/2">
     <SingleFaq
-      question="Why is automation important for my business, and how can you help?"
-      answer="Automation streamlines repetitive tasks, reduces human error, and saves time. Our custom automation solutions are tailored to your business needs, helping you improve operational efficiency and focus on growth strategies."
+      question="How do you help with migration visa applications?"
+      answer="Our migration services include assessing your eligibility, preparing the required documentation, and guiding you through the application process while staying updated with the latest immigration policies."
     />
     <SingleFaq
-      question="How do your hosting and site maintenance services ensure reliability?"
-      answer="We offer secure web hosting and proactive site maintenance to keep your website running smoothly. Regular updates, backups, and performance monitoring ensure your site remains fast, secure, and accessible, minimizing downtime and enhancing user experience."
+      question="Do you assist with language proficiency tests like IELTS or TOEFL?"
+      answer="Yes, we offer coaching for IELTS, TOEFL, and other language proficiency tests. Our expert trainers provide tips, strategies, and practice materials to help you achieve your target score."
     />
     <SingleFaq
-      question="What are the benefits of your content management and email marketing services?"
-      answer="Our content management services keep your website updated with relevant and engaging content, while our email marketing campaigns nurture leads and improve customer engagement. Together, they help build lasting relationships with your audience and boost conversions."
+      question="Can you help with document preparation and verification for visas?"
+      answer="Absolutely! We assist in organizing, preparing, and verifying all necessary documents for your visa application, ensuring that everything is in order to avoid delays or rejections."
     />
   </div>
 </div>

@@ -35,7 +35,7 @@ const Contact = () => {
                       Our Location
                     </h3>
                     <p className="text-base text-body-color dark:text-dark-6">
-                    Uttam nagar west, New Delhi - 110059
+                    Noida, New Delhi
                     </p>
                   </div>
                 </div>
@@ -55,9 +55,8 @@ const Contact = () => {
                       How Can We Help?
                     </h3>
                     <p className="text-base text-body-color dark:text-dark-6">
-                    <a href="mailto:manjeetdevelops@gmail.com">manjeetdevelops@gmail.com</a><br></br><br></br>
-                    <a href="tel:+918506040783">+91-8506040783</a>
-                    <a href="tel:+917042696938">+91-7042696938</a>
+                    <a href="mailto:manjeetdevelops@gmail.com">contactpinnacal@gmail.com</a><br></br><br></br>
+                    <a href="tel:+917618367236">+91-7618367236</a>
                     </p>
                   </div>
                 </div>
