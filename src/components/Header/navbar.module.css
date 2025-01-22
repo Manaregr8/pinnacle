@@ -8,7 +8,7 @@
   left: 0;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 0;
   border-bottom: 1px solid;
   border-image: linear-gradient(90deg,rgb(88, 183, 238),#96ffd7,rgb(255, 227, 142)) 1;
   background-color: white;
@@ -92,7 +92,7 @@
 }
 @media(max-width:855px){
   .linksForMenu p{
-      padding:15px 15px 0 15px;
+      padding:10px;
       color: rgb(230, 230, 230);
   }
   .menu{

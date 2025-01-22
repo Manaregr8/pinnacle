@@ -5,3 +5,6 @@
 .container a{
   font-family: Arial, Helvetica, sans-serif;
 }
+.container{
+  padding: 0;
+}

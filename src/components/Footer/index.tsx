@@ -16,12 +16,12 @@ const Footer = () => {
                   src="/logo/logo-white.png"
                   alt="logo"
                   width={140}
-                  height={30}
+                  height={10}
                   className="max-w-full"
                 />
               </Link>
               <p className="mb-8 max-w-[270px] text-base text-gray-7">
-              Our mission is to build cutting-edge solutions while empowering organizations globally through collaborative innovation and knowledge-sharing.
+              We are your trusted partner in navigating the complexities of the visa process, ensuring that every step is smooth and stress-free.
               </p>
               <div className="-mx-3 flex items-center">
                 {/* <a

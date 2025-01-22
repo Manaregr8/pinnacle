@@ -12,24 +12,22 @@ const About = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <div className="mb-12 max-w-[540px] lg:mb-0">
-              <h2 data-pointer="hover" className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
-                  {`Your One Stop Solution`}
+                <h2 data-pointer="hover" className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
+                  Your Pathway to a Successful Future
                 </h2>
                 <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
-                {`At Nearby You, we specialize in empowering businesses to grow, thrive, and succeed in today’s competitive landscape. As a full-service business growth consultancy, we provide a comprehensive suite of services tailored to your unique needs.
-
-Our expertise spans across website development, digital marketing, search engine optimization (SEO), social media marketing, graphic design, and more. Whether you're looking to establish a strong online presence, enhance your brand identity, or optimize your digital strategies, we are your trusted partner every step of the way.`}
-                  <br /> <br />
-                 {`We aim to be a partner in your success, helping you unlock new opportunities and achieve your business goals.
-
-Let’s grow together. Welcome to Nearby You, where your business comes first.`}
+                  At Pinnacle Study, we specialize in providing comprehensive visa services and coaching to help you achieve your dreams of studying, working, or migrating abroad. With years of experience, we are dedicated to offering personalized assistance tailored to your unique goals and needs.
+                  <br /><br />
+                  Whether you're looking for guidance with visa applications, interview coaching, or language proficiency test preparation, our experts are here to help. We believe in empowering you with the knowledge and skills to make your international aspirations a reality.
+                  <br /><br />
+                  We are your trusted partner in navigating the complexities of the visa process, ensuring that every step is smooth and stress-free.
                 </p>
 
                 <a
                   href="/#"
                   className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
                 >
-                  Know More
+                  Learn More
                 </a>
               </div>
             </div>
@@ -62,13 +60,13 @@ Let’s grow together. Welcome to Nearby You, where your business comes first.`}
                   <div className="relative z-10 mb-4 flex items-center justify-center overflow-hidden bg-primary px-6 py-12 sm:mb-8 sm:h-[160px] sm:p-5 lg:mb-4 xl:mb-8">
                     <div>
                       <span className="block text-5xl font-extrabold text-white">
-                        04
+                        10+
                       </span>
                       <span className="block text-base font-semibold text-white">
-                        We have
+                        Years of Experience
                       </span>
                       <span className="block text-base font-medium text-white text-opacity-70">
-                        Years of experience
+                        Helping Clients Achieve Their Dreams
                       </span>
                     </div>
                     <div>
