@@ -35,7 +35,7 @@ const Contact = () => {
                       Our Location
                     </h3>
                     <p className="text-base text-body-color dark:text-dark-6">
-                    Noida, New Delhi
+                    {`L 4, 1st floor Signature Global Park 2-3 Dhunela Gurugram`}
                     </p>
                   </div>
                 </div>
@@ -55,7 +55,7 @@ const Contact = () => {
                       How Can We Help?
                     </h3>
                     <p className="text-base text-body-color dark:text-dark-6">
-                    <a href="mailto:manjeetdevelops@gmail.com">contactpinnacal@gmail.com</a><br></br><br></br>
+                    <a href="mailto:manjeetdevelops@gmail.com">Abroad.pinnacle@gmail.com</a><br></br><br></br>
                     <a href="tel:+917618367236">+91-7618367236</a>
                     </p>
                   </div>
