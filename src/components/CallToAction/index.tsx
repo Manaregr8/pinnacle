@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import "./clickevent.css";
 const CallToAction = () => {
   return (
     <>
@@ -31,7 +31,7 @@ const CallToAction = () => {
           </div>
         </div>
         <div>
-          <span className="absolute left-0 top-0">
+          <span className="clickEventnone absolute left-0 top-0">
             <svg
               width="495"
               height="470"
@@ -62,7 +62,7 @@ const CallToAction = () => {
               />
             </svg>
           </span>
-          <span className="absolute bottom-0 right-0">
+          <span className="clickEventnone absolute bottom-0 right-0">
             <svg
               width="493"
               height="470"
