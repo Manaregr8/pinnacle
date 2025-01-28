@@ -125,7 +125,7 @@ export default function Navbar() {
                                     className={`${styles.hoverLink} ${activeLink === 'study' ? styles.active : ''} font-custom`} 
                                     href="/study" 
                                     onClick={handleActive} 
-                                    data-link="coaching"
+                                    data-link="study"
                                 >
                                     Study
                                 </Link>
