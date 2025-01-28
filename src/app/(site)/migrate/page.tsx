@@ -21,11 +21,11 @@ export const metadata: Metadata = {
 };
 
 const Migrate = () => {
-
+  const contactFormAccess = process.env.CONTACT_FORM_ACCESS;
   return (
     <>
     <div className="margiNTop"></div>
-    <BannerWithForm/>
+    <BannerWithForm contactFormAccess={contactFormAccess || ""}/>
     <section id="faqs" className="relative z-20 overflow-hidden bg-white pb-8 pt-20 dark:bg-dark lg:pb-[50px] lg:pt-[120px]">
       <div className="container">
         <SectionTitle

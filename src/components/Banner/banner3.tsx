@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./banner.css";
 
 // Define the BannerData interface
@@ -20,7 +20,14 @@ interface BannerData {
   backgroundColor: string;
 }
 
-const BannerWithForm: React.FC = () => {
+// Accept the contactFormAccess key as a prop
+interface BannerWithFormProps {
+  contactFormAccess: string; // API key passed as prop
+}
+
+const BannerWithForm: React.FC<BannerWithFormProps> = ({ contactFormAccess }) => {
+  const [result, setResult] = useState<string>("");
+
   // Define different data objects for each banner
   const bannerDataArray: BannerData[] = [
     {
@@ -33,7 +40,32 @@ const BannerWithForm: React.FC = () => {
           label: "Country you wish to migrate to",
           type: "select",
           placeholder: "Select Country",
-          options: ["Australia", "Canada", "Germany"],
+          options: [
+            "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", 
+            "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", 
+            "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", 
+            "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cabo Verde", "Cambodia", "Cameroon", 
+            "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo", 
+            "Costa Rica", "Croatia", "Cuba", "Cyprus", "Czech Republic", "Democratic Republic of the Congo", 
+            "Denmark", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", 
+            "Eritrea", "Estonia", "Eswatini", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", 
+            "Germany", "Ghana", "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", 
+            "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", 
+            "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kuwait", 
+            "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", 
+            "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", 
+            "Mauritius", "Mexico", "Micronesia", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", 
+            "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", 
+            "North Macedonia", "Norway", "Oman", "Pakistan", "Palau", "Panama", "Papua New Guinea", "Paraguay", "Peru", 
+            "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis", 
+            "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", 
+            "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", 
+            "Somalia", "South Africa", "South Sudan", "Spain", "Sri Lanka", "Sudan", "Suriname", "Sweden", "Switzerland", 
+            "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Timor-Leste", "Togo", "Tonga", "Trinidad and Tobago", 
+            "Tunisia", "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", 
+            "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Yemen", 
+            "Zambia", "Zimbabwe"
+        ],
         },
         { label: "Contact Number", type: "text", placeholder: "Your Mobile No." },
         { label: "Email Address", type: "email", placeholder: "Your Email Address" },
@@ -45,6 +77,40 @@ const BannerWithForm: React.FC = () => {
       backgroundColor: "#f44336",
     },
   ];
+
+  // Handle form submission
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+    if (!form) return;
+
+    setResult("Sending...");
+    const formData = new FormData(form);
+
+    // Append the API access key dynamically
+    formData.append("access_key", contactFormAccess);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setResult("Form Submitted Successfully");
+        form.reset();  // Reset the form safely
+      } else {
+        console.error("Error", data);
+        setResult(data.message);
+      }
+    } catch (error) {
+      console.error("Network Error:", error);
+      setResult("An error occurred. Please try again.");
+    }
+  };
 
   return (
     <div className="bannerContainer">
@@ -73,7 +139,8 @@ const BannerWithForm: React.FC = () => {
                 {data.description}
               </p>
 
-              <form className="space-y-4">
+              {/* Form */}
+              <form onSubmit={onSubmit} className="space-y-4">
                 {data.formFields.map((field, idx) => (
                   <div key={idx}>
                     <label
@@ -85,6 +152,7 @@ const BannerWithForm: React.FC = () => {
                     {field.type === "select" && field.options ? (
                       <select
                         id={`field-${idx}`}
+                        name={field.label} // Ensure that field name is set for the API
                         className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
                       >
                         <option value="">{field.placeholder}</option>
@@ -97,6 +165,7 @@ const BannerWithForm: React.FC = () => {
                     ) : (
                       <input
                         id={`field-${idx}`}
+                        name={field.label} // Ensure that field name is set for the API
                         type={field.type}
                         placeholder={field.placeholder}
                         className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
@@ -112,6 +181,9 @@ const BannerWithForm: React.FC = () => {
                   {data.buttonText}
                 </button>
               </form>
+
+              {/* Display submission result */}
+              <span className="block mt-4 text-center text-gray-700">{result}</span>
 
               {/* Footer */}
               <div className="mt-6 text-gray-700 text-center">
