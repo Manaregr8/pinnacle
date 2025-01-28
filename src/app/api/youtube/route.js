@@ -3,7 +3,7 @@ const CHANNEL_ID = "UCz6g2YiUmSeZVg-QxB-lKSQ"; // Replace with the channel ID (e
 const BASE_URL = "https://www.googleapis.com/youtube/v3/search";
 
 // API handler to fetch videos from the channel
-export default async function handler(req, res) {
+export async function handler(req, res) {
   try {
     // Fetch the video data for the specific channel
     const response = await fetch(
