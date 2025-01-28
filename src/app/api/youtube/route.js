@@ -1,11 +1,12 @@
-const API_KEY = "AIzaSyAncuw1yKqe5tb8rTMHX3qNAKIblKoxoAI"; // Replace with your YouTube Data API key
-const CHANNEL_ID = "UCz6g2YiUmSeZVg-QxB-lKSQ"; // Replace with the channel ID (e.g., UCXXXXXXXXXXXXX)
-const BASE_URL = "https://www.googleapis.com/youtube/v3/search";
+// src/app/api/youtube/route.js
 
-// API handler to fetch videos from the channel
-export async function handler(req, res) {
+export async function GET(req, res) {
+  const API_KEY = "AIzaSyAncuw1yKqe5tb8rTMHX3qNAKIblKoxoAI"; // Your API key
+  const CHANNEL_ID = "UCz6g2YiUmSeZVg-QxB-lKSQ"; // Replace with your YouTube channel ID
+  const BASE_URL = "https://www.googleapis.com/youtube/v3/search";
+
   try {
-    // Fetch the video data for the specific channel
+    // Fetch video data for the channel
     const response = await fetch(
       `${BASE_URL}?part=snippet&channelId=${CHANNEL_ID}&maxResults=10&order=date&key=${API_KEY}`
     );
@@ -17,7 +18,7 @@ export async function handler(req, res) {
 
     const data = await response.json();
 
-    // Extract relevant video data
+    // Extract and return the video data
     const videos = data.items.map((item) => ({
       videoId: item.id.videoId,
       title: item.snippet.title,
@@ -26,10 +27,18 @@ export async function handler(req, res) {
       publishedAt: item.snippet.publishedAt,
     }));
 
-    // Respond with the video data
-    res.status(200).json(videos);
+    return new Response(JSON.stringify(videos), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
   } catch (error) {
     console.error("Error fetching YouTube data:", error);
-    res.status(500).json({ error: "Failed to fetch YouTube videos" });
+    return new Response(
+      JSON.stringify({ error: "Failed to fetch YouTube videos" }),
+      {
+        status: 500,
+        headers: { "Content-Type": "application/json" },
+      }
+    );
   }
 }
