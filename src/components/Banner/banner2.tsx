@@ -168,7 +168,7 @@ const BannerWithForm: React.FC<BannerWithFormProps> = ({ contactFormAccess }) =>
                 <p>
                   <strong>{data.footerText}</strong>{" "}
                   <a
-                    href={data.footerLinkUrl}
+                    href="https://wa.me/917618367236"
                     className="text-red-500 underline"
                   >
                     {data.footerLinkText}
