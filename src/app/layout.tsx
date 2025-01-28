@@ -11,6 +11,7 @@ import ToasterContext from "./api/contex/ToasetContex";
 import { useEffect, useState } from "react";
 import PreLoader from "@/components/Common/PreLoader";
 import Loading from "@/components/Animation/Loading";
+import Click from "@/components/click";
 
 export default function RootLayout({
   children,
@@ -40,6 +41,7 @@ export default function RootLayout({
               enableSystem={false}
             >
               <ToasterContext />
+              <Click/>
               <Header />
               {children}
               <Footer />
