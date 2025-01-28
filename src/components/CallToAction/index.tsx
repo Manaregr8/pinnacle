@@ -20,7 +20,7 @@ const CallToAction = () => {
                     Explore our Services, where cutting-edge technology meets practical solutions.
                   </p>
                   <Link
-                    href="tel:+918506040783"
+                    href="tel:+917618367236"
                     className="inline-block rounded-md border border-transparent px-7 py-3 text-base font-medium text-white transition hover:bg-[#0BB489]" style={{border: "2px solid white"}}
                   >
                    Call Now
