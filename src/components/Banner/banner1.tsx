@@ -31,7 +31,7 @@ const BannerWithForm: React.FC<BannerWithFormProps> = ({ contactFormAccess }) =>
   // Define different data objects for each banner
   const bannerDataArray: BannerData[] = [
     {
-      title: "Study",
+      title: "Study Abroad",
       description: "Want to Study Abroad? Let us help with your application.",
       imageUrl: "/images/study.jpg", // Ensure the image exists in the public folder
       formFields: [
