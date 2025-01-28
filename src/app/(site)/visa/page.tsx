@@ -3,6 +3,26 @@ import Faq from "@/components/Faq";
 import SectionTitle from "../../../components/Common/SectionTitle";
 import SingleFaq from "../../../components/Faq/SingleFaq";
 import "../../globals.css";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Visa Services | Pinnacle Study",
+  description: "Pinnacle Study offers expert visa consultancy services for students, professionals, and families looking to migrate, study, or work abroad. Our dedicated team provides personalized assistance to ensure a smooth visa application process for all major countries.",
+  keywords: [
+    "visa consultancy services", "visa application assistance", "study visa consultants", "work visa consultants", "immigration services", 
+    "student visa help", "work visa guidance", "family visa assistance", "visa experts", "permanent residency services", 
+    "migration consultancy", "PR visa assistance", "tourist visa help", "business visa consultancy", "investor visa support", 
+    "work abroad visa services", "study abroad visa assistance", "student visa for USA", "student visa for Canada", "student visa for Australia", 
+    "work visa for USA", "work visa for Canada", "work visa for Australia", "work visa for UK", "work visa for Germany", 
+    "student visa for UK", "student visa for Germany", "skilled worker visa guidance", "employment-based visa services", 
+    "work and settlement abroad", "family migration services", "spouse visa services", "dependent visa services", "business immigration", 
+    "startup visa services", "golden visa assistance", "digital nomad visa", "visa for professionals", "employer-sponsored visa assistance", 
+    "study and work visa", "temporary visa services", "permanent residency visa help", "consultation for visa interviews", "visa interview preparation",
+    "student visa documentation", "work visa documentation", "family visa application assistance", "visa application for Australia", 
+    "visa application for USA", "visa application for Canada", "visa application for UK", "visa consultancy for Europe", 
+    "visa services for international students", "PR visa for Canada", "PR visa for Australia", "PR visa for USA", "visa consultancy near me"
+  ],
+};
+
 const Visa = () => {
 
   return (

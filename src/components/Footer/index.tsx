@@ -1,8 +1,29 @@
+"use client";
+import { useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
+import PrivacyPolicyModal from "../privacy";
+import TermsAndServiceModal from '../terms';
 
 const Footer = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false); // Control modal visibility
+  const [isTermsOpen, setIsTermsOpen] = useState(false);
+  const closeModal = () => {
+    setIsModalOpen(false); // Close the modal
+  };
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+  const closeTerms = () => {
+    setIsTermsOpen(false); // Close the modal
+  };
+  const openTerms = () => {
+    setIsTermsOpen(true);
+  };
   return (
+    <>
+    <PrivacyPolicyModal isOpen={isModalOpen} onClose={closeModal} />
+    <TermsAndServiceModal isOpen={isTermsOpen} onClose={closeTerms}/>
     <footer id="footer"
       className="wow fadeInUp relative z-10 bg-[#090E34] pt-20 lg:pt-[100px]"
       data-wow-delay=".15s"
@@ -20,7 +41,7 @@ const Footer = () => {
                   className="max-w-full"
                 />
               </Link>
-              <p className="mb-8 max-w-[270px] text-base text-gray-7">
+              <p className="mb-8 max-w-[270px] text-base text-gray-7 ">
               {`We are your trusted partner in navigating the complexities of the visa process, ensuring that every step is smooth and stress-free.`}
               </p>
               <div className="-mx-3 flex items-center">
@@ -141,27 +162,27 @@ const Footer = () => {
               </h4>
               <ul>
                 <li>
-                  <a
-                    href="/#footer"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
-                  >
-                    Documentation
-                  </a>
+                <a
+        href="/#privacy"
+        className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+        onClick={(e) => {
+          e.preventDefault(); // Prevent default link behavior
+          openModal();
+        }}
+      >
+        Privacy policy
+      </a>
                 </li>
                 <li>
-                  <a
-                    href="/#footer"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
-                  >
-                    Privacy policy
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/#footer"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
-                  >
-                    Terms of Service
+                <a
+        href="/#terms"
+        className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+        onClick={(e) => {
+          e.preventDefault(); // Prevent default link behavior
+          openTerms();
+        }}
+      >
+                    Terms of service
                   </a>
                 </li>
               </ul>
@@ -232,10 +253,10 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/#news"
+                    href="/#youtube"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    News
+                    Latest
                   </Link>
                 </li>
                 <li>
@@ -243,7 +264,7 @@ const Footer = () => {
                     href="/contact"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Support
+                    Contact Us
                   </Link>
                 </li>
               </ul>
@@ -258,22 +279,24 @@ const Footer = () => {
             <div className="w-full px-4 md:w-2/3 lg:w-1/2">
               <div className="my-1">
                 <div className="-mx-3 flex items-center justify-center md:justify-start">
+                <a
+        href="/#privacy"
+        className="px-3 text-base text-gray-7 hover:text-white hover:underline"
+        onClick={(e) => {
+          e.preventDefault(); // Prevent default link behavior
+          openModal();
+        }}
+      >
+        Privacy policy
+      </a>
                   <a
-                    href="/#footer"
-                    className="px-3 text-base text-gray-7 hover:text-white hover:underline"
-                  >
-                    Privacy policy
-                  </a>
-                  <a
-                    href="/#footer"
-                    className="px-3 text-base text-gray-7 hover:text-white hover:underline"
-                  >
-                    Legal notice
-                  </a>
-                  <a
-                    href="/#footer"
-                    className="px-3 text-base text-gray-7 hover:text-white hover:underline"
-                  >
+        href="/#terms"
+        className="px-3 text-base text-gray-7 hover:text-white hover:underline"
+        onClick={(e) => {
+          e.preventDefault(); // Prevent default link behavior
+          openTerms();
+        }}
+      >
                     Terms of service
                   </a>
                 </div>
@@ -284,7 +307,7 @@ const Footer = () => {
                 <p className="text-base text-gray-7">
                   Designed and Developed by{" "}
                   <a
-                    href="https://www.linkedin.com/in/manaregr8/"
+                    href="https://www.websitedevelopernearyou.site/"
                     rel="nofollow noopner noreferrer"
                     target="_blank"
                     className="text-gray-1 hover:underline"
@@ -564,6 +587,7 @@ const Footer = () => {
         </span>
       </div>
     </footer>
+    </>
   );
 };
 

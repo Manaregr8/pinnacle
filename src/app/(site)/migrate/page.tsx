@@ -3,6 +3,23 @@ import Faq from "@/components/Faq";
 import SectionTitle from "../../../components/Common/SectionTitle";
 import SingleFaq from "../../../components/Faq/SingleFaq";
 import "../../globals.css";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Migration Services | Pinnacle Study",
+  description: "Pinnacle Study offers expert migration services, assisting individuals and families in their journey to migrate abroad. We provide personalized solutions for permanent residency, citizenship, and relocation to a variety of countries, ensuring a seamless transition to your new life abroad.",
+  keywords: [
+    "migration services", "immigration consultancy", "permanent residency services", "migration to Canada", "migration to Australia", 
+    "migration to USA", "migration to UK", "migration to Germany", "migration to New Zealand", "migration to Ireland", 
+    "family migration services", "spouse visa assistance", "dependent visa guidance", "business migration services", "investor visa help", 
+    "startup visa assistance", "golden visa services", "digital nomad visa services", "migration consultancy services", "citizenship by investment", 
+    "migration pathways", "PR visa application", "permanent residency application", "migration support services", "migration to Europe", 
+    "relocation assistance", "settling abroad", "migrate abroad with Pinnacle Study", "international migration guidance", "residence permits", 
+    "migration to New Zealand", "business immigration services", "family sponsorship programs", "work and settle abroad", 
+    "international relocation services", "migrant services", "immigration and relocation solutions", "work and family migration", 
+    "personalized immigration services", "study and migrate services", "cross-border migration assistance", "expat migration services"
+  ],
+};
+
 const Migrate = () => {
 
   return (

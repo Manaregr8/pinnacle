@@ -3,6 +3,24 @@ import Faq from "@/components/Faq";
 import SectionTitle from "../../../components/Common/SectionTitle";
 import SingleFaq from "../../../components/Faq/SingleFaq";
 import "../../globals.css";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Work Services | Pinnacle Study",
+  description: "Pinnacle Study provides expert work visa services, offering personalized guidance for individuals seeking employment opportunities abroad. Our services cover a range of countries, helping you navigate the complexities of work visa applications and ensuring your move is as smooth as possible.",
+  keywords: [
+    "work visa services", "employment visa assistance", "work abroad services", "skilled worker visa", "work visa consultants", 
+    "job visa application", "work visa for USA", "work visa for Canada", "work visa for Australia", "work visa for UK", 
+    "work visa for Germany", "work visa for New Zealand", "work visa documentation assistance", "work visa requirements", 
+    "employer-sponsored visa", "work and settle abroad", "work visa application process", "international work opportunities", 
+    "skilled migration services", "work visa guidance", "employment-based immigration", "work abroad opportunities", 
+    "work visa consultancy", "temporary work visa", "permanent work visa", "family work visa", "work visa interview coaching", 
+    "job visa for Canada", "job visa for Australia", "job visa for USA", "job visa for Germany", "job opportunities abroad", 
+    "work permit services", "work visa for international professionals", "work abroad with Pinnacle Study", "professional migration services",
+    "visa application for work", "work visa processing", "work visa solutions", "work visa consultants near me", "job assistance for migrants", 
+    "work permit for skilled workers", "migration services for workers", "global work visa services", "work visa support services"
+  ],
+};
+
 const Work = () => {
 
   return (

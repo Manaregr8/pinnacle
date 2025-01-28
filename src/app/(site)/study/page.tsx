@@ -2,7 +2,25 @@ import BannerWithForm from "@/components/Banner/banner1";
 import Faq from "@/components/Faq";
 import SectionTitle from "../../../components/Common/SectionTitle";
 import SingleFaq from "../../../components/Faq/SingleFaq";
+import { Metadata } from "next";
 import "../../globals.css";
+export const metadata: Metadata = {
+  title: "Study Services | Pinnacle Study",
+  description: "At Pinnacle Study, we provide comprehensive study abroad services to help you navigate the process of applying to top universities worldwide. From selecting the right course to securing your student visa, we are here to guide you every step of the way.",
+  keywords: [
+    "study abroad services", "study abroad consultants", "study abroad guidance", "study abroad visa assistance", "university application help", 
+    "study visa for USA", "study visa for Canada", "study visa for Australia", "study visa for UK", "study visa for Germany", 
+    "education consultancy services", "best countries to study abroad", "study abroad opportunities", "affordable study abroad options", 
+    "study abroad coaching", "student visa consultants", "university application support", "international education consultants", 
+    "study abroad consultants for USA", "study abroad consultants for Canada", "study abroad consultants for Australia", 
+    "study abroad consultants for UK", "postgraduate study abroad services", "study abroad for international students", 
+    "study abroad programs", "scholarships for study abroad", "application assistance for study abroad", "global education guidance", 
+    "student accommodation abroad", "help with student visa", "international student guidance", "study abroad advice", 
+    "study abroad planning", "study abroad document preparation", "university application process", "study abroad for Indian students", 
+    "study abroad services for USA", "study abroad services for Canada", "study abroad services for Australia", "study abroad services for UK"
+  ],
+};
+
 const Study = () => {
 
   return (

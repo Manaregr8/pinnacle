@@ -5,32 +5,30 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Abhishek Kashyap",
-    designation: "Founder of Zeeloops",
+    name: " Amit Sharma",
+    designation: "MBA Aspirant",
     content:
-      "The Zeeloops website is now responsive, fast, attractive, and SEO-optimized. The transformation has been remarkable, and the attention to detail has significantly improved our online presence. I'm thrilled with the results and the professionalism displayed throughout the project!",
-    image: "/images/brands/abhishek.jpg",
-    star: 5,
+      "I can't thank Pinnacle Study One enough for their exceptional visa services. They guided me through the entire process, from selecting the right university abroad to preparing me for my visa interview. Their expertise and personalized approach made my dream of studying abroad a reality. Highly recommended!",
+ star: 5,
   },
+
   {
     id: 2,
-    name: "Sachin Chawla",
-    designation: "Founder of Respikart | Surgikart",
+    name: " Rajiv Mehta",
+    designation: "Student in Canada",
     content:
-      "The team did an outstanding job optimizing our SEO, enhancing our website's UI/UX, and automating our Google My Business profiles. Their innovative WhatsApp marketing strategies have also boosted our customer engagement. It's been a game-changer for our business!",
-    image: "/images/brands/sachin.jpg",
+      "Pinnacle Study One helped me with everything – from the visa application to visa interviews for my study abroad journey. They took the time to understand my goals and provided tailored solutions. Thanks to their guidance, I am now studying in Canada. I would recommend them to anyone looking for expert visa services!",
+
     star: 5,
   },
   {
     id: 3,
-    name: "Komal Chauhan",
-    designation: "Founder of TerxLabs",
+    name: " Sarah Fernandez",
+    designation: " IT Professional",
     content:
-      "Our collaboration with this team has been invaluable. They helped us serve several clients effectively and made complex projects possible with their expertise and coordination. The partnership has been a significant factor in our collaborative success, Looking forward for more",
-    image: "/images/brands/komal.jpg",
+      "I approached Pinnacle Study One for my work visa, and the experience was seamless. The team’s in-depth knowledge and prompt support at every step of the process helped me secure my work visa in no time. Their coaching sessions for the interview were spot-on. A truly reliable partner for anyone looking to migrate!",
     star: 5,
   },
-  
 ];
 
 const Testimonials = () => {

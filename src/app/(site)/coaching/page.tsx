@@ -4,6 +4,23 @@ import Faq from "@/components/Faq";
 import SectionTitle from "../../../components/Common/SectionTitle";
 import SingleFaq from "../../../components/Faq/SingleFaq";
 import "../../globals.css";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Coaching Services | Pinnacle Study",
+  description: "Pinnacle Study offers specialized coaching services to help you prepare for visa interviews, academic assessments, and other requirements. Our expert coaches provide personalized training to ensure you succeed in your journey to study, work, or migrate abroad.",
+  keywords: [
+    "coaching services", "visa interview coaching", "study abroad coaching", "work abroad coaching", "migration coaching", 
+    "study visa interview preparation", "student visa coaching", "professional coaching for visa interviews", "immigration coaching", 
+    "expert visa coaching", "interview coaching for migration", "personalized visa coaching", "coaching for study abroad", "work visa coaching", 
+    "Canada visa coaching", "Australia visa coaching", "USA visa coaching", "UK visa coaching", "Germany visa coaching", "interview training", 
+    "coaching for migration", "spouse visa coaching", "family migration coaching", "business visa coaching", "permanent residency coaching", 
+    "job visa coaching", "scholarship coaching", "higher education coaching", "post-graduate visa interview coaching", "consultation for visa interviews", 
+    "preparation for visa interview questions", "guidance for visa interviews", "interview practice sessions", "study abroad success coaching", 
+    "work abroad coaching services", "migration coaching programs", "settling abroad coaching", "digital nomad visa coaching", 
+    "startup visa interview coaching", "interview mock sessions", "study abroad coaching services", "practical coaching for visa interviews"
+  ],
+};
+
 const Coaching = () => {
 
   return (
