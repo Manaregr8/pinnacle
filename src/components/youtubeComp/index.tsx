@@ -1,29 +1,29 @@
 "use client";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 // Card component for each video
 const VideoCard = ({ video }: { video: any }) => {
   return (
-    <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
-      <div className="bg-white dark:bg-dark-2 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+    <Link href={video.url} target="_blank" rel="noopener noreferrer" className="w-full max-w-[250px]">
+      <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow w-full">
         <img
           src={video.thumbnail}
           alt={video.title}
           className="w-full h-48 object-cover"
         />
         <div className="p-4">
-          <h3 className="text-lg font-semibold text-dark dark:text-white">{video.title}</h3>
-          <p className="text-sm text-dark-6 dark:text-dark-3 mt-2">{video.description}</p>
+          <h3 className="text-lg font-semibold text-dark">{video.title}</h3>
+          <p className="text-sm text-gray-600 mt-2">{video.description}</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
 const YouTubeComp = () => {
   const [videos, setVideos] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
-  const [theme, setTheme] = useState<string>("light");
 
   // Fetch video data from the API
   useEffect(() => {
@@ -42,20 +42,13 @@ const YouTubeComp = () => {
     fetchVideos();
   }, []);
 
-  // Toggle the theme
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-    document.documentElement.classList.toggle("dark");
-  };
-
   return (
-    <div className={`transition-all duration-500 ${theme === "dark" ? "bg-dark-800" : "bg-white"}`}>
+    <div className="bg-white">
       <div className="max-w-screen-xl mx-auto py-8 px-4">
-
         {loading ? (
-          <div className="text-center text-dark dark:text-white">Loading videos...</div>
+          <div className="text-center text-dark">Loading videos...</div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex flex-wrap justify-center gap-6">
             {videos.map((video) => (
               <VideoCard key={video.videoId} video={video} />
             ))}
