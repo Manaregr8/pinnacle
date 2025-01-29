@@ -1,7 +1,7 @@
 // src/app/api/youtube/route.js
 
 export async function GET(req, res) {
-  const API_KEY = "AIzaSyCszLgJ9s8XHUeruLhURmTLxDxDg5jN6SY";
+  const API_KEY = "AIzaSyCGu17-nZtOIS9PMj5qHi3gbm48WTp1YD4";
   const CHANNEL_ID = "UCz6g2YiUmSeZVg-QxB-lKSQ"; // Replace with your YouTube channel ID
   const BASE_URL = "https://www.googleapis.com/youtube/v3/search";
 
