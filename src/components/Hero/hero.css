@@ -4,3 +4,6 @@ color: black;
 .clickEventnone{
   pointer-events: none;
 }
+.backgroundbannerColor {
+  background-color: #006fb8;
+}

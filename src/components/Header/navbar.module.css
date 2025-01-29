@@ -93,7 +93,7 @@
 @media(max-width:855px){
   .linksForMenu p{
       padding:10px;
-      color: rgb(230, 230, 230);
+      color: #333;
   }
   .menu{
       display: flex;
@@ -122,9 +122,10 @@
   top: 0;
   height: 100vh;
   width: 300px;
-  background-color: #090e34;
-  color: white;
+  background-color: white;
+  color: #333;
   transform: translateX(100%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: 0.3s all ease-in-out;
   }
   .closeButton{
@@ -142,13 +143,13 @@
       object-fit: cover;
   }
   .linksForMenu a{
-      color: white;
+    color: #333;
       padding: 10px;
-      border-left: 2px solid white;
+      border-left: 2px solid #333;
       margin: 10px 15px 10px 15px;
   }
   .linksForMenu a::after{
-      background-color: white;
+      background-color: #333;
   }
 }
 @media(max-width:425px){
