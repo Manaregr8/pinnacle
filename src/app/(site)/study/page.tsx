@@ -3,6 +3,7 @@ import Faq from "@/components/Faq";
 import SectionTitle from "../../../components/Common/SectionTitle";
 import SingleFaq from "../../../components/Faq/SingleFaq";
 import { Metadata } from "next";
+import YouTubeWidget from "@/components/youtubeComp";
 import "../../globals.css";
 export const metadata: Metadata = {
   title: "Study Services | Pinnacle Study",
@@ -654,6 +655,7 @@ const Study = () => {
         </span>
       </div>
     </section>
+    <YouTubeWidget/>
     </>
   );
 };

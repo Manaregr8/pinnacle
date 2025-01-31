@@ -1,7 +1,7 @@
 import About from "@/components/About";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
-
+import YouTubeWidget from "@/components/youtubeComp";
 export const metadata: Metadata = {
   title: "About Us | Pinnacle Study",
   description: "At Pinnacle Study, we are dedicated to empowering individuals to pursue their dreams of studying, working, and settling abroad. With a team of experienced consultants and a client-first approach, we provide tailored visa solutions, coaching services, and comprehensive support to make your international journey seamless.",
@@ -22,6 +22,7 @@ const AboutPage = () => {
     <main>
       <div style={{marginTop:"50px"}}></div>
       <About />
+      <YouTubeWidget/>
     </main>
   );
 };

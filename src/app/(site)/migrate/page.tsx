@@ -4,6 +4,7 @@ import SectionTitle from "../../../components/Common/SectionTitle";
 import SingleFaq from "../../../components/Faq/SingleFaq";
 import "../../globals.css";
 import { Metadata } from "next";
+import YouTubeWidget from "@/components/youtubeComp";
 export const metadata: Metadata = {
   title: "Migration Services | Pinnacle Study",
   description: "Pinnacle Study offers expert migration services, assisting individuals and families in their journey to migrate abroad. We provide personalized solutions for permanent residency, citizenship, and relocation to a variety of countries, ensuring a seamless transition to your new life abroad.",
@@ -653,6 +654,7 @@ const Migrate = () => {
         </span>
       </div>
     </section>
+    <YouTubeWidget/>
     </>
   );
 };

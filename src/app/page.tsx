@@ -45,7 +45,7 @@ export default function Home() {
       <Testimonials />
       <Faq />
     {/*  <LinkedInPosts /> */}
-   {/* <YouTubeComp/>*/}
+   <YouTubeComp/>
       <Contact />
      {/* <Clients />*/}
     </main>

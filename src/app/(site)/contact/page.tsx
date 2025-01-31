@@ -23,6 +23,7 @@ const ContactPage = () => {
     <>
       <Breadcrumb pageName="Contact Page" />
       <Contact />
+      
     </>
   );
 };
