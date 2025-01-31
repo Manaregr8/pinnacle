@@ -1,8 +1,7 @@
 "use client";
-import "./youtube.css";
 import { useEffect } from "react";
-
-const YouTubeWidget = () => {
+import "./youtube.css"
+const ElfsightYouTube = () => {
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://static.elfsight.com/platform/platform.js";
@@ -15,4 +14,5 @@ const YouTubeWidget = () => {
   );
 };
 
-export default YouTubeWidget;
+export default ElfsightYouTube;
+

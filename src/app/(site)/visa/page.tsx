@@ -3,7 +3,6 @@ import Faq from "@/components/Faq";
 import SectionTitle from "../../../components/Common/SectionTitle";
 import SingleFaq from "../../../components/Faq/SingleFaq";
 import "../../globals.css";
-import YouTubeWidget from "@/components/youtubeComp";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Visa Services | Pinnacle Study",
@@ -657,7 +656,7 @@ const Visa = () => {
         </span>
       </div>
     </section>
-    <YouTubeWidget/>
+
     </>
   );
 };

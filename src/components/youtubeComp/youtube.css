@@ -15,8 +15,8 @@
     height: 450px;
   }
 }
-@media (max-width:441px) {
+@media (max-width:480px) {
   .cleanContainerYoutube{
-    height: 400px;
+    height: 550px;
   }
 }

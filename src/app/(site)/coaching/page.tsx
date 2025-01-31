@@ -3,7 +3,6 @@ import BannerWithForm from "@/components/Banner/banner2";
 import Faq from "@/components/Faq";
 import SectionTitle from "../../../components/Common/SectionTitle";
 import SingleFaq from "../../../components/Faq/SingleFaq";
-import YouTubeWidget from "@/components/youtubeComp";
 import "../../globals.css";
 import { Metadata } from "next";
 export const metadata: Metadata = {
@@ -655,7 +654,6 @@ const Coaching = () => {
         </span>
       </div>
     </section>
-    <YouTubeWidget/>
     </>
   );
 };
