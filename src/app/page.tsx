@@ -13,6 +13,7 @@ import { Metadata } from "next";
 import "./globals.css";
 import Banner from "@/components/Banner";
 import YouTubeComp from "@/components/youtubeComp";
+import IndexPage from "@/components/blogss";
 export const metadata: Metadata = {
   title: "Pinnacle Study | Home",
   description: "At Pinnacle Study, we specialize in providing comprehensive visa services and coaching to help you achieve your dreams of studying, working, or migrating abroad. With years of experience, we are dedicated to offering personalized assistance tailored to your unique goals and needs.",
@@ -47,6 +48,7 @@ export default function Home() {
     {/*  <LinkedInPosts /> */}
    <YouTubeComp/>
       <Contact />
+      <IndexPage/>
      {/* <Clients />*/}
     </main>
   );
