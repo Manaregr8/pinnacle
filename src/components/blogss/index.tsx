@@ -58,7 +58,7 @@ const IndexPage = () => {
   };
 
   return (
-    <div className="p-4">
+    <div className="p-4 mb-12">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1300px] mx-auto">
         {posts.length > 0 ? (
           posts.map((post) => (
@@ -73,7 +73,7 @@ const IndexPage = () => {
           <p>Loading blog posts...</p>
         )}
       </div>
-
+  
       {/* Modal to display full blog content */}
       <BlogModal
         isOpen={isModalOpen}
